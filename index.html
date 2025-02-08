@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Español</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="home-screen">
+        <h1>Bienvenido al Quiz de Español</h1>
+        <p>Selecciona un tema para comenzar:</p>
+        <div id="topics">
+            <button class="topic-btn" data-topic="vocabulario">Vocabulario</button>
+            <button class="topic-btn" data-topic="gramática">Gramática</button>
+            <button class="topic-btn" data-topic="verbos">Verbos</button>
+            <button class="topic-btn" data-topic="expresiones">Expresiones</button>
+        </div>
+    </div>
+
+    <div id="quiz-screen" style="display: none;">
+        <h2 id="question-text"></h2>
+        <div id="options"></div>
+        <p>Tiempo restante: <span id="time-left">60</span> segundos</p>
+        <button id="next-btn" style="display: none;">Siguiente</button>
+    </div>
+
+    <div id="result-screen" style="display: none;">
+        <h2 id="results-head">Resultados</h2>
+        <p id="result-text"></p>
+    </div>
+    <button id="backToHome" class="button">Volver a la página principal</button>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
